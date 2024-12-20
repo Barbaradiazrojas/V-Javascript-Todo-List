@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color-bg: #121212; /* Background color */
+    --color-primary: #6200EE; /* Primary color */
+    --color-secondary: #BB86FC; /* Secondary color */
+    --color-text: #FFFFFF; /* Text color */
+    --color-border: #37474F; /* Border color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--color-border);
+    margin-bottom: 2rem;
+}
+
+.ingreso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.ingreso p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.ingreso-tarea {
+    display: flex;
+    gap: 1rem;
+}
+
+#texto-tarea {
+    padding: 0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    width: 200px;
+}
+
+.btn-agregar {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-agregar:hover {
+    background-color: var(--color-secondary);
+}
+
+.tareas {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.resumen {
+    background-color: var(--color-border);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.resumen-titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.lista {
+    width: 100%;
+}
+
+.tabla-tareas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-tareas caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.tabla-tareas th, .tabla-tareas td {
+    border: 1px solid var(--color-border);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.tabla-tareas th {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.tabla-tareas .columna-nombre-tarea {
+    text-align: left;
+    width: 20rem;
+}
+
+.tabla-tareas input[type="checkbox"] {
+    accent-color: var(--color-primary);
+}
+
+.tabla-tareas i {
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.tabla-tareas i:hover {
+    color: var(--color-secondary);
+}
